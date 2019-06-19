@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
+  resources :tags do
+  end
+
+
 end
