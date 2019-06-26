@@ -1,7 +1,13 @@
+<%= link_to 'Home', welcome_index_path %>
+
 <h1>Available Tags (<%= @tags.count %>)</h1>
+
+<%= link_to 'Create Tag', new_tag_path %>
 
 <ul>
   <% @tags.each do |tag| %>
     <li><%= link_to(tag.name, tag_path(tag)) %></li>
   <% end %>
 </ul>
+
+<%= link_to 'Back', articles_path %>
